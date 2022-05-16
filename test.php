@@ -1,21 +1,18 @@
-<?php
-
-session_start();
-
-$_SESSION["premium"] = true;
- 
-?>
 <!doctype html>
 <html>
   <head>
-    <title>Una pagina</title>
-    <script src="js/script.js"></script>
+    <title>Un Formulario</title>
   </head>
   <html>
-    <h1>Un titulo</h1>
+    <form action="test.php">
+      <label>Codigo Entrada</label><br />
+      <input type="text" name="entrada" /><br />
+      <button type="submit" name="submit">
+      Enviar
+      </button>
+    </form>
     
-    <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-    </p>
+    <iframe src="test.php">
+    </iframe>
   </html>
 </html>
